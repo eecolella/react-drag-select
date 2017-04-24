@@ -4,12 +4,8 @@
   "description": "A React drag to select component",
   "main": "index.js",
   "scripts": {
-    "build-demo": "browserify ./sample/sample.jsx -o ./sample/sample.js"
-  },
-  "browserify": {
-    "transform": [
-      ["reactify"]
-    ]
+    "start": "gulp serve",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -29,11 +25,21 @@
   },
   "homepage": "https://github.com/pablofierro/react-drag-select",
   "dependencies": {
-    "lodash": "^3.10.1",
-    "react": "^0.13.3"
+    "prop-types": "^15.5.8",
+    "ramda": "^0.23.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "browserify": "^11.0.1",
-    "reactify": "^1.1.1"
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "bro": "^0.0.3",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-bro": "^1.0.2",
+    "gulp-sourcemaps": "^2.6.0"
   }
 }

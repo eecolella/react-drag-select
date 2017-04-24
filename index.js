@@ -1,1 +1,1 @@
-module.exports = require('./lib/Selection');
+module.exports = require('./lib/react-drag-select')
